@@ -1,28 +1,3 @@
-from datetime import datetime
-
-
-# class LRUCache:
-#
-#     def __init__(self, capacity: int = 10) -> None:
-#         if capacity is None or not isinstance(capacity, int):
-#             raise TypeError('Expected maxsize to be an integer or None')
-#         self.capacity = capacity
-#
-#         dll = DLL()
-#
-#         dll.list_all_items()
-#         dll.list_all_map_items()
-#
-#     def get(self, key: str) -> str:
-#         pass
-#
-#     def set(self, key: str, value: str) -> None:
-#         pass
-#
-#     def rem(self, key: str) -> None:
-#         pass
-
-
 class LRUCache:
     _DLLMap = {}
     first_item = None
@@ -81,12 +56,9 @@ class LRUCache:
                 self.set(key, value)
                 return
 
+            # Достигнут лимит кеша
             if self.capacity <= len(self._DLLMap.keys()):
-                print("Достигнут лимит кэша, хуярим другую логику")
-
                 self.rem(self.first_item.key)
-                # # self.add(key, )
-                # return
 
             self.add(key, value)
 
