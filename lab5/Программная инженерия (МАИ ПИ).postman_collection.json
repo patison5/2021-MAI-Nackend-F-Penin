@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "7ba2982c-45e3-4b56-a708-28b998420ead",
+		"name": "Программная инженерия (МАИ ПИ)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Пользователи",
+			"item": [
+				{
+					"name": "Показать всех пользователей",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.31.210/api/profile",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"210"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Категории",
+			"item": [
+				{
+					"name": "Показать все категории",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.31.210/api/categories",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"210"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Показать одну категорию",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.31.210/api/category/3/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"210"
+							],
+							"path": [
+								"api",
+								"category",
+								"3",
+								""
+							],
+							"query": [
+								{
+									"key": "category_name",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить новую категорию",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.31.210/api/categories?category_name=Здоровенный лещщщщ",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"210"
+							],
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "category_name",
+									"value": "Здоровенный лещщщщ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Изменить существующую категорию",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.31.210/api/category/8/?category_name=Клещ",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"210"
+							],
+							"path": [
+								"api",
+								"category",
+								"8",
+								""
+							],
+							"query": [
+								{
+									"key": "category_name",
+									"value": "Клещ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удалить категорию",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.31.210/api/category/6/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"210"
+							],
+							"path": [
+								"api",
+								"category",
+								"6",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Товары",
+			"item": [
+				{
+					"name": "Показать все товары",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
