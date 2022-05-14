@@ -93,9 +93,9 @@ WSGI_APPLICATION = 'lab4.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
+        'NAME': 'lab4',
+        'USER': 'kali',
+        'PASSWORD': 'kali',
         'HOST': 'localhost',
         'PORT': '',
     }

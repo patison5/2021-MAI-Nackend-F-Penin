@@ -9,3 +9,7 @@ class User(models.Model):
 
     def __str__(self):
         return self.user_login
+
+
+# User.objects.create(user_name="Fedor", user_surname="Penin", user_email="patison4@yandex.ru", user_login="patison5")
+# User.objects.create(user_name="NeFedor", user_surname="NePenin", user_email="patison55@yandex.ru", user_login="patison55")
