@@ -3,5 +3,5 @@
 #### Задачи
 - [x] **ЛР1: Реализация LRUCache** [(Исходники)](https://github.com/patison5/2021-MAI-Nackend-F-Penin/tree/main/Lab1)
 - [x] **ЛР2: Сервер nginx и gunicorn. Приложение WSGI. Измерение производительности nginx и Gunicorn с помощью ab или wrk**
-- [x] **ЛР3: Создать и запустить Django-проект
-- [x] **ЛР4: Установка Postfressql. Проектировка базы данных
+- [x] **ЛР3: Создать и запустить Django-проект**
+- [x] **ЛР4: Установка Postfressql. Проектировка базы данных**
