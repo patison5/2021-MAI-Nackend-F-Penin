@@ -6,3 +6,4 @@
 - [x] **ЛР3: Создать и запустить Django-проект** [(Исходники)](https://github.com/patison5/2021-MAI-Nackend-F-Penin/tree/main/lab3)
 - [x] **ЛР4: Установка Postfressql. Проектировка базы данных** [(Исходники)](https://github.com/patison5/2021-MAI-Nackend-F-Penin/tree/main/lab4)
 - [x] **ЛР5: Реализация заглушек возвращающих методов.** [(Исходники)](https://github.com/patison5/2021-MAI-Nackend-F-Penin/tree/main/lab5)
+- [x] **ЛР6: Контейнерезация Django приложения.** [(Исходники)](https://github.com/patison5/2021-MAI-Nackend-F-Penin/tree/main/lab6)
