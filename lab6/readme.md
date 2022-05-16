@@ -32,9 +32,9 @@ docker-compose logs -f
 
 
 #### Дополнительно
-Предполагается необходимость отключать flush и migrate при каждом запуске контейнера. Сделать это можно в файле django_project/entrypoing.sh
+Если есть необходимость отключить flush и migrate при каждом запуске контейнера, то сделать это можно в файле django_project/entrypoing.sh, закоментировав соответствующие строчки.
 
-Команды для ручного запуска при необходимости
+Команды для ручного запуска
 ```sh
 python manage.py flush --no-input
 python manage.py migrate
