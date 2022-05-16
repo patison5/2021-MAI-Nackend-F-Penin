@@ -1,7 +1,7 @@
 ## Лабораторная работа №6
 
 ### Файл .env.dev
-Содержит все необходимые переменные окружения для создания и работы контейнеров nginx, django и postgressql
+Содержит все необходимые переменные окружения для создания и работы контейнеров nginx, django и postgressql. Замечу, что superuser создается автоматически, данные супер-юзера также указываются в .env файле
 
 Пример такого файла:
 ```
@@ -15,6 +15,9 @@ SQL_PASSWORD=lab6_password
 SQL_HOST=db
 SQL_PORT=5432
 DATABASE=postgres
+DJANGO_SUPERUSER_USERNAME=kali
+DJANGO_SUPERUSER_PASSWORD=kali
+DJANGO_SUPERUSER_EMAIL=patison4@yandex.ru
 ```
 
 #### Скачать и запустить контейнеры в фоновом режиме
