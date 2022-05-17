@@ -23,11 +23,11 @@ python3 ./manage.py runserver 0.0.0.0:8000
 ### Измерение с помощью WRK
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/patison5/2021-MAI-Nackend-F-Penin/master/img/wrk.gif" alt="WRK">
+  <img src="https://raw.githubusercontent.com/patison5/2021-MAI-Nackend-F-Penin/main/img/wrk.jpg" alt="WRK">
 </p>
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/patison5/2021-MAI-Nackend-F-Penin/master/img/wrk2.gif" alt="WRK">
+  <img src="https://raw.githubusercontent.com/patison5/2021-MAI-Nackend-F-Penin/main/img/wrk2.jpg" alt="WRK">
 </p>
 
