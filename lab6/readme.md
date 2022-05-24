@@ -79,3 +79,24 @@ docker volume inspect lab6_postgres_data
     }
 ]
 ```
+
+
+
+
+```sh
+docker-compose -f docker-compose-prod.yml up -d --build 
+```
+
+```sh
+docker-compose -f docker-compose-prod.yml logs -f    
+```
+
+```sh
+docker-compose -f docker-compose-prod.yml exec web python manage.py migrate --noinput     
+docker-compose -f docker-compose-prod.yml exec web python manage.py collectstatic --no-input --clear
+```
+
+
+```sh
+docker-compose -f docker-compose-prod.yml down -v
+```
