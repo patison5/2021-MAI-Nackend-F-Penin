@@ -67,7 +67,18 @@ def categories(request):
                 "msg": "Item was added",
                 'Id': new_category.id
             })
-        
+
+@csrf_exempt 
+def find_categories(request):
+    print("hello world")
+    if request.method == 'POST':
+        name = request.GET.get("category_name", None)
+        queryset = Category.objects.filter(category_text__icontains=name).values()
+        return JsonResponse({
+            'category': list(queryset)
+        })
+
+
 
 @csrf_exempt 
 def category(request, category_id):

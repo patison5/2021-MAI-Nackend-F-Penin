@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name 192.168.31.210;
+    server_name 192.168.31.211;
 
     root /home/kali/2021-MAI-Nackend-F-Penin;
 
@@ -10,7 +10,7 @@ server {
     }
 
     location / {
-        proxy_pass http://192.168.31.210:8000/;
+        proxy_pass http://192.168.31.211:8000/;
     }
 
     access_log /var/log/nginx/srv2.log;
