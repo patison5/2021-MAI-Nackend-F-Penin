@@ -132,6 +132,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+print("Хочу посмотреть полный путь к статике:")
+print(STATIC_URL)
+print(STATIC_ROOT)
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
