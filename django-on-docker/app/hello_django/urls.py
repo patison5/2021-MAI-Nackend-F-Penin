@@ -3,11 +3,11 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from upload.views import image_upload
+from django.urls import path, include
 
 urlpatterns = [
-    path("", image_upload, name="upload"),
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('api/', include('Api.urls')),
 ]
 
 if bool(settings.DEBUG):
