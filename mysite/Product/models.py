@@ -5,6 +5,7 @@ from audioop import reverse
 # - model: Модель категории
 class Category(models.Model):
     category_text = models.CharField(max_length=200)
+    category_image = models.FileField(upload_to="media/")
 
     def __str__(self):
         return self.category_text

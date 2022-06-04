@@ -32,7 +32,7 @@ class CategoryAPIView(APIView):
 
     def post(self, request):
         # serializer = CategorySerializer(data=request.data)
-        # k = serializer.is_valid(raise_exception=True)
+        # serializer.is_valid(raise_exception=True)
         # print(k)
         
         category_new = Category.objects.create(

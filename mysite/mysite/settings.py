@@ -58,7 +58,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'Product.apps.ProductConfig',
-    'rest_framework'
+    'Upload.apps.UploadConfig',
+    
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -156,3 +158,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_S3_ACCESS_KEY_ID='AKIA4Q6QDERYW3T7C72N'
+AWS_S3_SECRET_ACCESS_KEY='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'
+AWS_STORAGE_BUCKET_NAME='pi-labs-bucket'
+AWS_S3_REGION_NAME = "eu-north-1"
+# AWS_S3_SIGNATURE_VERSION = "s3v4"
