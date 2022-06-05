@@ -50,7 +50,12 @@ class FirstTest(TestCase):
         product = factories.ProductFactory.build()
         print(product)
         
-        self.assertEqual('foo'.upper(), 'FOO')
+        try:
+            self.client.post("/api/v1/productlist/", product)
+        except:
+            self.assertTrue(False)
+            
+        self.assertTrue(True)
 
     
     def test_get_all(self):
